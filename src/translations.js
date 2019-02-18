@@ -1,3 +1,5 @@
+import React from "react";
+
 let projectName = window.location.host.split(".")[0].toUpperCase();
 let translations = {
   EN: {
@@ -125,10 +127,13 @@ let translations = {
       incorrectAccess: "Incorrect login or password"
     },
     listingPage: {
+      coinConnect: 'Connect your coin',
+      coinExchange: 'To our exchange',
       coinListing: "Coin Listing",
       coinListingText:
         "If you own, develop or officially represent a coin, you can introduce your coin to our Exchange",
-      fillForm: "Fill the form"
+      fillForm: "Fill the form",
+      sendRequest: 'Send request'
     },
     supportPage: {
       support: "Support",
@@ -367,9 +372,12 @@ let translations = {
       messageSend: "謝謝，您的申請被接受"
     },
     listingPage: {
+      coinConnect: 'Connect your coin',
+      coinExchange: 'To our exchange',
       coinListing: "币种清单",
       coinListingText: "如果你拥有、开发、正式提交货币。",
-      fillForm: "填写表格"
+      fillForm: "填写表格",
+      sendRequest: 'Send request'
     },
     financePage: {
       title: "金融",
