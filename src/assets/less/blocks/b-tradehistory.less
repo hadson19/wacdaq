@@ -1,0 +1,61 @@
+@import '../common/colors';
+
+
+.tradeHistory-content-tableHead {
+  background: #7eade1;
+  height: 35px;
+  display: flex;
+  
+  &-cell {
+    color: @color_text;
+    padding: 11px 5px 11px 12px;
+    height: 35px;
+
+    &:nth-child(3) {
+      text-align: center;
+    }
+
+    &_red {
+      color: @red;
+    }
+
+    &_green {
+      color: @green;
+    }
+  }
+}
+
+.b-tradehistory__content {
+  overflow-y: auto;
+  height: 490px;
+}
+
+.tradeHistory-content-tableBody-row{
+  background: #fff;
+  height: 35px;
+  display: flex;
+
+  &:nth-child(even) {
+    background: #e8eff7;
+  }
+
+  &-cell {
+    color: @color_text;
+    padding: 11px 0 11px 8px;
+    height: 35px;
+
+    &_red {
+      color: @red;
+      font-family: 'robotobold';
+    }
+
+    &_green {
+      color: @green;
+      font-family: 'robotobold';
+    }
+
+    &:last-child {
+      padding-right: 12px;
+    }
+  }
+}

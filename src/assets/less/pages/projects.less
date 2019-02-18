@@ -1,0 +1,139 @@
+#projects {
+    background: #122a45 url(/static/images/page-history.png);
+    padding-bottom: 50px;
+
+    h1.title {
+        font-size: 24px;
+        font-family: robotobold;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .wrapper {
+        padding: 0 100px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 0px;
+            clear: both;
+        }
+    }
+
+    .projects-menu {
+        width: 20%;
+        float: left;
+
+        h3 {
+            background: #0a1f36;
+            color: #3288e9;
+            padding: 15px 40px;
+            border-radius: 5px 5px 0 0;
+            font-family: robotobold;
+        }
+
+        li {
+            a {
+                display: inline-block;
+                width: 100%;
+                font-family: robotolight;
+                color: #d0e0f3;
+                text-decoration: none;
+                padding: 15px 40px;
+                background-color: #1a3d64; 
+
+                &.selected {
+                    background-color: #3288e9;
+                }
+            }
+
+            & + li {
+                border-top: 1px solid #516e8f;
+            }
+        }
+    }
+
+    .fluid-content {
+        float: left;
+        padding-left: 50px;
+        width: 80%;
+    }
+
+    .projects-info {
+        background: #fff;
+        border-radius: 5px;
+        color: black;
+        padding: 25px 50px 50px;
+
+        .info-header {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5eef8;
+
+            .logo {
+                display: inline-block;
+                margin-right: 20px;
+                width: 40px;
+                text-align: center;
+            }
+
+            img {                
+                vertical-align: middle;
+                height: 40px;
+            }
+
+            h2 {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: robotobold;
+                font-size: 24px;                
+            }
+
+            p {
+                display: inline;
+                margin-right: 40px;
+            }
+        }
+
+        .info-details {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5eef8;
+
+            p {
+                margin-bottom: 20px;
+                width: 100%;
+                white-space: nowrap;
+            }
+
+            .info-title {
+                display: inline-block;
+                width: 20%;
+                font-family: robotoregular;
+                vertical-align: top;
+            }
+
+            .info-value {
+                display: inline-block;
+                width: 80%;
+                white-space: normal;
+                word-wrap: break-word;
+            }
+
+            .info-title.social {
+                line-height: 26px;
+            }
+        }
+
+        .info-body {
+            p {
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+ul.projects-side-menu{
+    max-height: 480px;
+    overflow-y: scroll;
+}

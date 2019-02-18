@@ -1,0 +1,61 @@
+.history_wrapper {
+  background: #122a45 url('/static/images/page-finance.jpg') center 0 no-repeat;
+  background-size: contain;
+  padding-top: 80px;
+
+  .start-title {
+    color: #fff;
+    margin: 50px auto;
+  }
+
+  h3 {
+    color: #3288e9;
+  }
+
+  table.history_table {
+
+    tr {
+
+      th {
+        background: #163455;
+        border: none;
+        border-bottom: 1px solid #3288e9;
+        border-right: 1px solid #4e6885;
+        font-weight: bold;
+        font-size: 16px;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      td {
+        background: rgba(10, 31, 54, 0.65);
+        border-right: 1px solid #4e6885;
+        color: #fff;
+
+        .history_info {
+          .time {
+            color: #fff;
+          }
+          
+          & > div {
+            strong {
+              font-weight: bold;
+              color: #3288e9;
+            }
+
+            span {
+              color: #fff;
+            }
+          }
+        }
+
+        &:last-child {
+          border-right: none;
+          color: #3288e9;
+        }
+      }
+    }
+  }
+}

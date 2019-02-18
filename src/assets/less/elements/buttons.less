@@ -1,0 +1,48 @@
+@import '../common/colors';
+
+input[type=submit] {
+  background: #4a9d8e;
+  -moz-transition: linear 0.1s;
+  -o-transition: linear 0.1s;
+  -webkit-transition: linear 0.1s;
+  transition: linear 0.1s;
+  padding: 8px 0px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 25px !important;
+  margin: 15px auto 0;
+  text-decoration: none;
+  -moz-transition: linear 0.1s;
+  -o-transition: linear 0.1s;
+  -webkit-transition: linear 0.1s;
+  transition: linear 0.1s;
+  font-family: "robotobold";
+  text-transform: uppercase;
+  border: none;
+  font-size: 20px;
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &-success {
+    background: #4a9d8e; 
+    color: #fff;
+  }
+
+  &-error {
+    background: #AA3939; 
+    color: #fff;
+  }
+}

@@ -1,0 +1,81 @@
+@import '../common/colors';
+
+&.buyAndSell {
+  background: #e8eff7;
+  height: 579px;
+
+  .buyAndSell-information {
+    border: none;
+    border-bottom: 3px solid @green;
+
+    &-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-label {
+        width: 30%;
+      }
+
+      &-value {
+        color: @color_text;
+        width: 70%;
+        
+        span {
+          color: @color_text;    
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  & .error-block {
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #ce2f54;
+  }
+
+  &.buyAndSell_sell {
+
+    .buyAndSell-information {
+      border: none;
+      border-bottom: 3px solid @red;
+    }
+
+    .buyAndSell-submit {
+      background: #d6496a;
+    }
+  }
+
+  .buyAndSell-form {
+    &-field {
+      &-label {
+        color: @color_text; 
+      }
+      &-input {
+        input {
+          text-align: right;
+          padding: 8px 60px 8px 10px;
+          color: #606a77;
+          font-size: 14px;
+        }
+
+        &-unit {
+          background: @color_text; 
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .buyAndSell-fee {
+    font-family: "robotobold";
+    color: @color_text;
+  }
+
+  .buyAndSell-submit {
+    background: @green;
+  }
+}

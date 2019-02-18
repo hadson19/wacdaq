@@ -1,0 +1,39 @@
+@import '../common/colors';
+
+.currentPair-logo {
+  color: #000;
+}
+
+.currentPair-information {
+  background: #fff;
+
+  &-tableHead {
+    &-row {
+      &-cell {
+        color: @color_text;
+        border-color: @blue;
+      }
+    }
+  }
+
+  &-tableBody {
+    &-row {
+      &-cell {
+        color: @color_text;
+        border-color: @blue;
+
+        &_red {
+          color: @red;
+        }
+
+        &_green {
+          color: @green;
+        }
+
+        &_total {
+          color: @blue;
+        }
+      }
+    }
+  }
+}

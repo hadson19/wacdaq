@@ -1,0 +1,158 @@
+@import '../common/colors';
+
+@color_1: #0a1f36;
+@color_2: #fff;
+@color_3: #1b63b2;
+@color_4: #4a9d8e;
+@color_5: #ce2f54;
+
+.page-finance {
+  color: @color_1;
+  background: #122a45 url('/static/images/page-finance.jpg') center 0 no-repeat;
+  background-size: contain;
+  padding-top: 80px;
+
+  .depositsAndWithdrawals-title {
+    color: #fff;
+    margin: 50px auto;
+  }
+
+  .depositsAndWithdrawals {
+    border: none;
+    box-shadow: none;
+    margin-top: 50px;
+    background: none;
+  }
+
+  table {
+    border: none !important;
+
+    tr {
+      height: 55px;
+
+      th {
+        background: #0a1f36;
+        color: #3288e9;
+        font-size: 18px;
+        height: 55px;
+        border-left: 1px solid #516e8f;
+        border-right: 1px solid #516e8f;
+        border-top: none;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      td {
+        border: 1px solid #516e8f;
+        color: #fff;
+        background: #1a3d64;
+        border-top: none;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        .depositsAndWithdrawals-table-body-row-cell-action {
+          color: #3288e9;
+
+          &_active {
+            color: #fff;
+            padding: 3px 7px 5px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      td.depositsAndWithdrawals-form {
+        background: rgba(10, 31, 54, 0.65);
+        padding: 20px 120px;
+
+        .depositsAndWithdrawals-form-field-label {
+          line-height: 39px;
+          color: #fff;
+        }
+
+        .depositsAndWithdrawals-form-field-input {
+          input {
+            border: 1px solid #1b63b2;
+            color: @green;
+            border-radius: 5px;
+
+            &:focus {
+              box-shadow: 0 0 10px #3288e9;
+            }
+          }
+        }
+
+        .depositsAndWithdrawals-form-field-value {
+          color: @color_5;
+        }
+
+        .depositsAndWithdrawals-form-total {
+          margin-top: 15px;
+          border-top: 2px solid #1b63b2;
+
+          .depositsAndWithdrawals-form-total-label {
+            color: #fff;
+          }
+
+          .depositsAndWithdrawals-form-total-value {
+            color: #fff;
+          }
+        }
+
+        .depositsAndWithdrawals-form-submit {
+          input[type='submit'] {
+            background: @green;
+            padding: 8px 10px;
+
+            &.disabled {
+              opacity: 0.5;
+              cursor: default;
+
+              &:hover {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+
+      td.depositsAndWithdrawals-address {
+        background: rgba(10, 31, 54, 0.65);
+        padding: 30px 120px;
+
+        .depositsAndWithdrawals-address-title {
+          color: #3288e9;
+          line-height: 18px;
+        }
+
+        .depositsAndWithdrawals-address-warning {
+          color: #fff;
+
+          span {
+            margin-right: 10px;
+          }
+        }
+
+        .depositsAndWithdrawals-address-value {
+          border: 1px solid #1a3d64;
+          background: #1a3d64;
+          color: @color_4;
+          margin: 10px auto;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../common/colors';
+
+.orderBook-content-tableHead {
+  background: #7eade1;
+  height: 35px;
+  
+  &-cell {
+    color: @color_text;
+    padding: 11px 0 11px 12px;
+    height: 35px;
+
+    &_red {
+      color: @red;
+    }
+
+    &_green {
+      color: @green;
+    }
+
+    &:last-child {
+      padding-right: 12px;
+    }
+  }
+}
+
+.b-orderbook__content {
+  height: 209px;
+  overflow-y: auto;
+}
+
+.orderBook-content-tableBody-row {
+  background: #fff;
+
+  &:nth-child(even) {
+    background: #e8eff7;
+  }
+
+  &-cell {
+    color: @color_text;
+    padding: 11px 0 11px 12px;
+    height: 35px;
+
+    &_red {
+      color: @red;
+    }
+
+    &_green {
+      color: @green;
+    }
+
+    &:last-child {
+      padding-right: 12px;
+    }
+  }
+}
+
+.orderBook-content-lastPrice {
+  background: @blue;
+
+  &-label {
+    color: #fff;
+  }
+  &-value {
+    color: #fff;
+
+    span {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}

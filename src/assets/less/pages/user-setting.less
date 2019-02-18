@@ -1,0 +1,144 @@
+.settings-tabs__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #364257;
+  margin-bottom: 30px;
+  @media @less_than_1500 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  @media @less_than_1200 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul li {
+    list-style-type: none;
+    padding: 10px 100px;
+  }
+  li {
+    color: #5a5e65;
+    font-size: 21px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    &.active {
+      color: #3288e9;
+      border-bottom: 2px solid #3288e9;
+    }
+  }
+}
+
+.settings-form {
+  background-color: rgba(10, 31, 54, 0.8);
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 60px 60px;
+  width: 90%;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.4);
+
+  @media @less_than_1500 {
+    width: 90%;
+  }
+  @media @less_than_1200 {
+    width: 100%;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  &__wrapper {
+    color: #fff;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    flex-flow: column;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: calc(100% - 60px);
+      background-color: #5a5e65;
+      position: absolute;
+      left: 50%;
+      top: 30px;
+
+      @media @less_than_1050 {
+        display: none;
+      }
+    }
+    h1 {
+      color: #3288e9;
+    }
+  }
+}
+
+input.settings-form__submit {
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+.email-2fa {
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border: none !important;
+  padding-top: 1em;
+  font-size: 20px;
+}
+
+.settings-form__p {
+  line-height: 1.5em;
+}
+
+.red {
+  color: red;
+}
+
+a.setting-form__link {
+  color: #3288e9;
+}
+
+.code-msg {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.code-msg__btn {
+  text-align: center;
+}
+
+.margin-0 {
+  margin-bottom: 0 !important;
+}
+.padding-top-20 {
+  padding-top: 20px !important;
+}
+
+.login-code__code-input {
+  text-align: center;
+  text-indent: 0px;
+  padding: 8px 10px !important;
+}

@@ -1,0 +1,76 @@
+@import '../common/colors';
+
+.page-exchange {
+
+  #tv_chart_container {
+    height: 483px !important;
+  }
+
+  .b-excnange {
+    position: relative;
+    border: 1px solid @blue;
+    overflow: hidden;
+
+    &.orderBook {
+      height: 579px;
+    }
+
+    &.markets {
+      height: 349px;
+    }
+
+    &.balance {
+      height: 227px;
+    }
+
+    &.tradeHistory {
+      height: 579px;
+    }
+
+    &.myOrders {
+      height: 331px;
+    }
+    
+    &__title {
+      background: @blue;
+      color: #fff;
+      
+      &:before {
+        display: none;
+      }
+    }
+    
+    &-fill {
+      background-color: #fff;
+      color: #fff;
+      margin-bottom: 20px;
+      border: 1px solid @blue;
+      overflow: hidden;
+      
+      @import '../blocks/b-currentpair';
+    }
+    
+
+    @import '../blocks/b-buyandsell';
+    @import '../blocks/b-markets';
+    @import '../blocks/b-balance';
+    @import '../blocks/b-orderbook';
+    @import '../blocks/b-tradehistory';
+    @import '../blocks/b-myorders';
+    
+  }
+  
+  @import '../blocks/b-coins_logo';
+}
+
+.module-loader{
+  position: absolute;
+  top:50px;
+  &__current-pair{
+    top:0;
+  }
+}
+
+.b-excnange-fill{
+  position: relative;
+}
